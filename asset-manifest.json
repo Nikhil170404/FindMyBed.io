@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/FindMyBed.io/static/css/main.be666eec.css",
+    "main.js": "/FindMyBed.io/static/js/main.dec1dd5c.js",
+    "static/js/453.077edb0a.chunk.js": "/FindMyBed.io/static/js/453.077edb0a.chunk.js",
+    "index.html": "/FindMyBed.io/index.html",
+    "main.be666eec.css.map": "/FindMyBed.io/static/css/main.be666eec.css.map",
+    "main.dec1dd5c.js.map": "/FindMyBed.io/static/js/main.dec1dd5c.js.map",
+    "453.077edb0a.chunk.js.map": "/FindMyBed.io/static/js/453.077edb0a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be666eec.css",
+    "static/js/main.dec1dd5c.js"
+  ]
+}
