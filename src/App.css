@@ -1,38 +1,226 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Add font styles and make the navbar responsive */
+.navbar {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif; /* Example font family */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.left-section {
+  display: flex;
+  align-items: flex-end; /* Align the username text to the bottom */
+}
+
+.sign-out-button {
+  margin-left: auto; /* Push the button to the right */
+}
+
+/* Responsive font size adjustments */
+@media screen and (max-width: 600px) {
+  .navbar {
+    font-size: 16px;
+  }
+
+  .navbar h1 {
+    font-size: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media screen and (max-width: 400px) {
+  .navbar {
+    font-size: 14px;
+  }
+
+  .navbar h1 {
+    font-size: 18px;
+  }
+}
+
+
+.hospital-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.hospital-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hospital-header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.hospital-header h2 {
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Example font family */
+}
+ 
+.hospital-header p {
+  margin: 0;
+  color: #666;
+}
+
+.ward-info {
+  padding: 10px 20px;
+}
+
+.ward-info h3 {
+  margin-top: 0;
+}
+
+.ward-info ul {
+  padding-left: 20px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.sign-in-page {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.sign-in-page button {
+  margin-top: 20px;
+}
+
+.loading {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #4CAF50;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* App.css */
+
+/* Adjust the alignment of navbar items */
+.navbar {
+  background-color: #4CAF50;
   color: white;
+  padding: 10px 20px; /* Increase padding for better spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar h1 {
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column; /* Change to column layout */
+  align-items: flex-start; /* Align items to the start */
+}
+
+.sign-out-button {
+  margin-top: 10px; /* Add top margin to separate from the title */
+}
+/* App.css */
+
+/* Style for search button */
+.search-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #45a049;
+}
+.secondary-navbar {
+  background-color: #f4f4f4;
+  border-top: 1px solid #ccc;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.secondary-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; /* Adjust spacing */
+}
+
+.secondary-navbar ul li {
+  /* margin-right: 20px; */ /* Remove margin */
+}
+
+.secondary-navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.secondary-navbar ul li a:hover {
+  color: #555;
 }
